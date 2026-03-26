@@ -2,6 +2,8 @@
 
 *Modified August 19, 2025*
 
+> **Note:** This repository is an English translation of the [original Chinese documentation](https://my.feishu.cn/wiki/Jf7RwvQfQiFNT7k1eIbc00Runlc), created to make the Xmini-C3/V3 development board more accessible to English-speaking developers and AI agents.
+
 ---
 
 ## Preface
