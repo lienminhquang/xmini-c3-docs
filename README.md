@@ -47,21 +47,31 @@ Confirm that the Xmini-C3 has the correct firmware flashed. Power on the Xmini-C
 
 > **Note:** If flashing via VSCode IDE or IDF command line, the board will restart automatically — no manual restart required.
 
+![Board in WiFi config mode](images/board-wifi-config-mode.png)
+
 ### 2. Xmini-C3 Network Configuration
 
 **1) Connect phone or PC to Xmini-C3 hotspot**
 
 Open your phone's WiFi settings and find the hotspot starting with **Xiaozhi-** — that is the board's hotspot. After connecting, wait a few seconds and the WiFi selection page will appear automatically. Do not close it manually beforehand.
 
+![Find Xiaozhi hotspot in WiFi list](images/phone-find-hotspot.png)
+![Connected to Xiaozhi hotspot](images/phone-connected-hotspot.png)
+
 **2) Select WiFi and enter password**
 
 From the 2.4G networks scanned by the Xiaozhi hotspot, select your home or office WiFi network (no need to manually type the SSID — it will be filled in automatically after selecting). Enter the WiFi password and tap **Connect** (if the password is already saved on your phone, it will submit automatically).
+
+![Select WiFi network](images/wifi-select-network.png)
+![Enter WiFi password](images/wifi-enter-password.png)
 
 > **Note:** If the WiFi configuration page does not open automatically (possible compatibility issue), ensure your phone stays connected to the **Xiaozhi-** hotspot, then open a browser and go to **192.168.4.1** to access the WiFi configuration page directly. The steps are the same as above.
 
 **3) Network connected, device restarts**
 
 If the WiFi password is correct, the Xmini-C3 will connect to the network and restart within 3 seconds. After restarting, the device will automatically connect to the configured WiFi network.
+
+![Device restarting after WiFi connection](images/wifi-device-restart.png)
 
 ### 3. Re-configuring Network on Xmini-C3
 
@@ -77,6 +87,8 @@ After the Xiaozhi AI device restarts and before it successfully connects (blue L
 
 In the re-configuration page, previously configured WiFi networks are shown. If a network is no longer needed, click the **X** next to its name to remove it.
 
+![WiFi re-configuration page](images/wifi-reconfigure-page.png)
+
 For detailed configuration steps, refer to Section 2 above.
 
 ---
@@ -89,6 +101,9 @@ Xiaozhi AI backend configuration panel: [https://xiaozhi.me/](https://xiaozhi.me
 
 On first boot, the Xmini-C3 enters standby mode. Press the BOOT button to wake it and start a conversation — say anything (e.g., "please configure network") as conversation content (C3 does not support offline voice recognition). If the device is not yet registered, Xiaozhi AI will speak a 6-digit verification code and prompt you to log in to the control panel to add the device.
 
+![Board in standby mode](images/board-standby-mode.png)
+![Board showing verification code](images/board-verification-code.png)
+
 Visit [https://xiaozhi.me/](https://xiaozhi.me/) from your phone or computer. Register an account if you haven't already.
 
 ### 2. Create an AI Agent
@@ -97,9 +112,15 @@ After logging in to xiaozhi.me, you will see the welcome screen. Click **Console
 
 Click **+ New Agent** to create an AI agent and fill in the agent name.
 
+![Console - New Agent button](images/console-new-agent.png)
+![Console - New Agent dialog](images/console-new-agent-dialog.png)
+
 ### 3. Add Device
 
 Following the voice prompt from the device, go to: **Console → Agent → Add Device** (first time). Click **[Add Device]**, enter the 6-digit verification code spoken by the Xiaozhi AI device, then click **OK** to register. The device count will update — click to enter and you will see the newly registered Xmini-C3 device.
+
+![Console - Add Device](images/console-add-device.png)
+![Console - Device registered](images/console-device-registered.png)
 
 You can now use the newly added Xmini-C3 device. Press the button in the upper right to start a conversation.
 
